@@ -31,6 +31,10 @@ target_sources(${BASE_TARGET_NAME}
         src/PluginEditor.cpp
         src/PluginProcessor.cpp)
 
+target_compile_features(${BASE_TARGET_NAME}
+        PRIVATE
+        cxx_std_17)
+
 target_compile_definitions(${BASE_TARGET_NAME}
     PUBLIC
         JUCE_WEB_BROWSER=0
