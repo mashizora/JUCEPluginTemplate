@@ -32,7 +32,7 @@ target_sources(${BASE_TARGET_NAME}
         src/PluginProcessor.cpp)
 
 target_compile_features(${BASE_TARGET_NAME}
-        PRIVATE
+    PUBLIC
         cxx_std_17)
 
 target_compile_definitions(${BASE_TARGET_NAME}
